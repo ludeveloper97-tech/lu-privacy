@@ -1,227 +1,270 @@
-# Politica de Privacidad
+# Privacy Policy
 
-Ultima actualizacion: 14 de abril de 2026
+Last updated: May 29, 2026
 
-## 1. Identidad del responsable
+## 1. Data controller
 
-Esta Politica de Privacidad describe como se accede, usa, almacena y comparte la informacion en relacion con la app `N3D Launcher` (paquete Android `com.ludev.threedlauncherm`) en su version para Google Play.
+This Privacy Policy describes how information is accessed, used, stored, and shared in connection with the `N3D Launcher` app (Android package `com.ludev.threedlauncherm`) in its Google Play version.
 
-Responsable del tratamiento:
+Data controller:
 
-- Correo: [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com)
+- Email: [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com)
 
-Si publicas la app con otra entidad o correo, sustituye estos datos antes de subirla a Google Play.
+If you publish the app under another entity or email address, replace these details before submitting the app to Google Play.
 
-## 2. Alcance
+## 2. Scope
 
-Esta politica cubre:
+This policy covers:
 
-- los datos a los que la app accede en el dispositivo;
-- los datos que la app almacena localmente;
-- los datos que la app puede transmitir fuera del dispositivo;
-- los permisos solicitados por la version actual para Google Play;
-- la retencion y eliminacion de datos.
+- data the app accesses on the device;
+- data the app stores locally;
+- data the app may transmit outside the device;
+- permissions requested by the current Google Play version;
+- data retention and deletion.
 
-## 3. Resumen de privacidad
+## 3. Privacy Summary
 
-La version actual revisada para Google Play funciona principalmente como launcher y experiencia de personalizacion para Android. La mayor parte de la informacion que usa se procesa localmente en el dispositivo del usuario.
+The current Google Play version mainly works as an Android launcher and personalization experience. Most information used by the app is processed locally on the user's device.
 
-La build `play` revisada:
+The reviewed `play` build:
 
-- no usa badges de notificaciones;
-- no usa podometro ni monedas internas;
-- no usa Nearby/Bluetooth/ubicacion para intercambio local;
-- no usa Firebase ni backend propio;
-- no usa acceso amplio al almacenamiento;
-- ofrece una compra unica opcional gestionada por Google Play para desbloquear personalizacion avanzada.
-- puede acceder a contactos si el usuario concede permiso al abrir `Friends List`.
+- includes notification badges as an optional feature, disabled by default, which requires the user to first enable the setting inside the app and then grant Android's special notification access;
+- does not use pedometer data or internal coins;
+- may use Nearby/Bluetooth for nearby avatar profile exchange if the user enables Nearby;
+- does not use a `ForegroundService`, persistent notification, or local/mDNS fallback in the `play` version;
+- does not use Firebase or a proprietary backend;
+- does not use broad storage access;
+- offers an optional one-time purchase managed by Google Play to unlock advanced personalization;
+- may access contacts if the user grants permission when opening `Friends List`;
+- may manage a local library of compatible files chosen by the user through the system file picker.
 
-La app no esta disenada para vender datos personales ni para usar datos personales con fines de publicidad.
+The app is not designed to sell personal data or use personal data for advertising purposes.
 
-## 4. Datos a los que la app accede o que trata localmente
+## 4. Data Accessed or Processed Locally
 
-### 4.1 Apps instaladas y metadatos basicos
+### 4.1 Installed Apps and Basic Metadata
 
-La app puede leer informacion de apps lanzables instaladas para:
+The app may read information about launchable installed apps in order to:
 
-- mostrarlas en el launcher;
-- permitir busqueda y apertura;
-- organizarlas en carpetas;
-- establecer accesos por defecto en modulos del launcher.
+- display them in the launcher;
+- allow search and launch;
+- organize them into folders;
+- set default shortcuts in launcher modules.
 
-Los datos tratados localmente pueden incluir:
+Data processed locally may include:
 
-- nombre de la app;
-- paquete Android;
-- icono;
+- app name;
+- Android package name;
+- icon;
 - version;
-- fecha de instalacion.
+- installation date.
 
-### 4.2 Camara y contenido visual
+### 4.2 Camera and Visual Content
 
-Si el usuario concede permiso de camara, la app puede:
+If the user grants camera permission, the app may:
 
-- usar la camara dentro del modulo correspondiente;
-- capturar imagenes dentro de la app;
-- permitir usar imagenes seleccionadas por el usuario en funciones de personalizacion.
+- use the camera inside the corresponding module;
+- capture images inside the app;
+- allow the user to use selected images for personalization features.
 
-En la version revisada para Google Play, la grabacion con audio esta desactivada y la app no solicita permiso de microfono.
+In the reviewed Google Play version, video recording with audio is disabled and the app does not request microphone permission.
 
-### 4.3 Contactos
+### 4.3 Contacts
 
-Si el usuario concede permiso de contactos al abrir `Friends List`, la app puede leer localmente contactos del dispositivo para:
+If the user grants contacts permission when opening `Friends List`, the app may locally read contacts from the device in order to:
 
-- mostrar la lista de amigos dentro del launcher;
-- buscar contactos por nombre;
-- mostrar nombre, telefono y miniatura local cuando el sistema la proporciona;
-- iniciar una llamada o abrir WhatsApp con el numero elegido por el usuario;
-- permitir crear un contacto desde la propia pantalla de amigos.
+- display the friends list inside the launcher;
+- search contacts by name;
+- display name, phone number, and local thumbnail when provided by the system;
+- start a phone call or open WhatsApp with the number chosen by the user;
+- allow creating a contact from the friends screen.
 
-Los contactos se procesan localmente en el dispositivo. La build actual no usa Firebase ni backend propio para subir contactos a un servidor.
+Contacts are processed locally on the device. The current build does not use Firebase or a proprietary backend to upload contacts to a server.
 
-La app muestra una explicacion previa antes de solicitar el permiso de contactos:
+The app shows an explanation before requesting contacts permission:
 
 ```text
-N3D Launcher usa tus contactos solo para mostrar la lista de amigos y permitir llamadas o abrir WhatsApp desde esta pantalla. Los contactos no se suben a ningun servidor.
+N3D Launcher uses your contacts only to show the friends list and allow calls or opening WhatsApp from this screen. Contacts are not uploaded to any server.
 ```
 
-### 4.4 Archivos seleccionados por el usuario
+### 4.4 Files Selected by the User
 
-La app puede acceder a archivos elegidos voluntariamente por el usuario mediante el selector del sistema para:
+The app may access files voluntarily chosen by the user through the system file picker in order to:
 
-- importar imagenes o animaciones;
-- configurar fondos personalizados;
-- importar archivos compatibles para la biblioteca local.
+- import images or animations;
+- configure custom backgrounds;
+- import compatible files for the local library.
 
-La app no solicita `MANAGE_EXTERNAL_STORAGE` ni acceso amplio al almacenamiento.
+The app does not request `MANAGE_EXTERNAL_STORAGE` or broad storage access.
 
-### 4.5 Biblioteca local de archivos compatibles
+### 4.5 Local Library of Compatible Files
 
-La app puede permitir al usuario seleccionar archivos compatibles, como `.3ds`, `.cia` o `.3dz`, para mostrarlos en una biblioteca local dentro del launcher.
+The app may allow the user to select compatible files, such as `.3ds`, `.cia`, `.3dz`, `.nds`, `.dsi`, `.gba`, `.gbc`, or `.gb`, to display them in a local library inside the launcher.
 
-Cuando el usuario importa uno de esos archivos, la app puede procesar localmente:
+When the user imports one of these files, the app may locally process:
 
-- nombre del archivo;
-- ruta del archivo seleccionada por el usuario;
-- identificador interno del contenido cuando esta disponible;
-- miniatura embebida del propio archivo.
+- file name;
+- file path selected by the user;
+- internal content identifier when available;
+- embedded thumbnail when exposed by the file format;
+- approximate platform based on file extension;
+- preferred emulator chosen by the user.
 
-La miniatura extraida se guarda localmente en almacenamiento interno de la app para volver a mostrarla dentro de la biblioteca.
+The extracted thumbnail is stored locally in the app's internal storage so it can be displayed again inside the library. If no valid thumbnail is available, the app displays a local generic placeholder.
 
-### 4.6 Preferencias, fondos y contenido local
+### 4.6 Preferences, Backgrounds, and Local Content
 
-La app puede almacenar localmente informacion como:
+The app may locally store information such as:
 
-- temas y gradientes;
-- fondos personalizados;
-- carpetas y configuracion del grid;
-- notas dibujadas;
-- logs de uso dentro de la app;
-- estado de proteccion local de ciertos accesos.
+- themes and gradients;
+- custom backgrounds;
+- folders and grid configuration;
+- drawn notes;
+- usage logs inside the app;
+- local protection state for selected access points.
 
-### 4.7 Autenticacion local del dispositivo
+### 4.7 Local Device Authentication
 
-La app puede usar autenticacion del dispositivo, como biometria o bloqueo seguro, para proteger el acceso a determinadas apps o carpetas dentro del launcher.
+The app may use device authentication, such as biometrics or secure lock screen authentication, to protect access to selected apps or folders inside the launcher.
 
-La app no recibe ni almacena la huella biometrica del usuario; solo recibe del sistema Android el resultado de la autenticacion.
+The app does not receive or store the user's biometric fingerprint. It only receives the authentication result from Android.
 
-### 4.8 Compras integradas con Google Play
+### 4.8 Google Play In-App Purchases
 
-La version `play` puede ofrecer una compra unica opcional para desbloquear funciones premium de personalizacion.
+The `play` version may offer an optional one-time purchase to unlock premium personalization features, icon packs, and advanced local library features.
 
-Cuando el usuario inicia una compra, la transaccion se gestiona mediante Google Play Billing. La app puede recibir y tratar localmente informacion tecnica necesaria para desbloquear el contenido, como:
+When the user starts a purchase, the transaction is handled by Google Play Billing. The app may receive and locally process technical information needed to unlock the content, such as:
 
-- identificador del producto comprado;
-- estado de la compra o restauracion;
-- identificador de la transaccion cuando lo facilita Google Play.
+- purchased product identifier;
+- purchase or restoration status;
+- transaction identifier when provided by Google Play.
 
-La app no procesa directamente datos de tarjeta ni credenciales de pago en sus propios servidores.
+The app does not directly process payment card data or payment credentials on its own servers.
 
-## 5. Datos que pueden transmitirse fuera del dispositivo
+### 4.9 Nearby / Nearby Profile Exchange
 
-Segun la revision actual de la flavor `play`, la app no usa Firebase ni esta pensada para transmitir datos personales a un backend propio como parte de su flujo principal.
+If the user enables Nearby, the `play` version may use Google Nearby Connections to detect other nearby devices that also have N3D Launcher open and Nearby enabled.
 
-No obstante:
+The app may exchange a basic avatar profile that may include:
 
-- la app puede abrir webs, correo u otras apps externas cuando el usuario asi lo elige;
-- la compra premium opcional se tramita con Google Play;
-- si en una version futura se reactivan funciones remotas, esta politica debera actualizarse antes de publicar esa build.
+- local technical device identifier;
+- username/avatar name;
+- short phrase;
+- selected nationality;
+- last visible module/app when applicable;
+- limited-size icon/avatar when available.
 
-## 6. Finalidades del tratamiento
+Received profiles are stored locally in the app's plaza. The `play` version does not use a proprietary server for this feature, does not use Firebase, and does not keep Nearby active through a `ForegroundService`. The feature may stop searching if the app goes to the background or the device is locked.
 
-La app trata datos para:
+### 4.10 Notification Badges
 
-- ofrecer una pantalla de inicio/launcher funcional;
-- mostrar, organizar y abrir apps instaladas;
-- permitir personalizacion visual del launcher;
-- mostrar la lista de amigos desde los contactos locales si el usuario concede permiso;
-- gestionar una biblioteca local de archivos compatibles seleccionados por el usuario;
-- proteger accesos locales mediante autenticacion del dispositivo;
-- guardar preferencias y contenido creado por el usuario;
-- comprobar el estado de una compra premium opcional realizada mediante Google Play.
+The app may offer an optional feature to show notification counters on launcher icons.
 
-## 7. Base de legitimacion
+This feature:
 
-Segun la funcion utilizada, el tratamiento puede basarse en:
+- is disabled by default;
+- requires the user to manually enable it from the launcher settings;
+- requires the user to grant Android's special notification access from system settings;
+- may locally read which apps have active notifications in order to calculate a counter per app;
+- does not need to read or display message content to work;
+- is used only to update visual badges inside the launcher.
 
-- la ejecucion de la funcionalidad solicitada por el usuario;
-- el consentimiento del usuario al activar permisos o funciones opcionales;
-- la ejecucion de una compra opcional solicitada por el usuario a traves de Google Play;
-- el interes legitimo del responsable para operar y mantener la app dentro de los limites legales aplicables;
-- el cumplimiento de obligaciones legales, cuando proceda.
+Counters are processed locally on the device. The app does not send notifications, message texts, senders, or badge counters to a proprietary server, and does not use them for advertising, analytics, automation, or remote control.
 
-## 8. Con quien se comparten los datos
+The user can disable this feature from the launcher settings and can also revoke notification access from Android settings at any time.
 
-Segun la revision actual de la build `play`, la app no esta disenada para compartir datos personales con terceros desde un backend propio.
+## 5. Data That May Be Transmitted Outside the Device
 
-La app puede interactuar con terceros unicamente cuando el usuario asi lo solicita, por ejemplo:
+According to the current review of the `play` flavor, the app does not use Firebase and is not designed to transmit personal data to a proprietary backend as part of its main flow.
 
-- Google Play, para una compra integrada opcional;
-- apps externas o enlaces externos abiertos por el usuario, por ejemplo telefono o WhatsApp cuando el usuario los abre desde `Friends List`.
+However:
 
-## 9. Conservacion de datos
+- the app may open websites, email, or other external apps when the user chooses to do so;
+- the optional premium purchase is handled by Google Play;
+- if the user enables Nearby, a basic avatar profile may be exchanged directly with other nearby devices through Google Nearby Connections;
+- if the user enables notification badges, notification data is processed locally and is not transmitted to a proprietary server;
+- if remote features are re-enabled in a future version, this policy must be updated before publishing that build.
 
-### 9.1 Datos locales
+## 6. Purposes of Processing
 
-Los datos almacenados en el dispositivo se conservan normalmente hasta que:
+The app processes data to:
 
-- el usuario los borra desde la propia app;
-- el usuario borra los datos de la app desde Android;
-- el usuario desinstala la app.
+- provide a functional home screen/launcher;
+- display, organize, and launch installed apps;
+- allow visual personalization of the launcher;
+- show the friends list from local contacts if the user grants permission;
+- manage a local library of compatible files selected by the user;
+- protect local access points through device authentication;
+- save preferences and user-created content;
+- allow optional nearby avatar profile exchange when the user enables Nearby;
+- show optional notification badges on launcher icons when the user enables the feature and grants Android's special notification access;
+- check the status of an optional premium purchase made through Google Play.
 
-### 9.2 Datos de compra
+## 7. Legal Basis
 
-La app puede mantener estado local minimo para UX, pero en la flavor `play` el entitlement premium se vuelve a sincronizar con Google Play y no se considera valido solo por almacenamiento local.
+Depending on the feature used, processing may be based on:
 
-## 10. Eliminacion de datos
+- performance of the functionality requested by the user;
+- the user's consent when enabling optional permissions or features;
+- performance of an optional purchase requested by the user through Google Play;
+- the controller's legitimate interest in operating and maintaining the app within applicable legal limits;
+- compliance with legal obligations, where applicable.
 
-El usuario puede:
+## 8. Data Sharing
 
-- desinstalar la app;
-- borrar los datos de la app desde Android;
-- eliminar contenido local desde las funciones disponibles;
-- solicitar informacion adicional contactando con [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com).
+According to the current review of the `play` build, the app is not designed to share personal data with third parties through a proprietary backend.
 
-## 11. Seguridad
+The app may interact with third parties only when requested by the user, for example:
 
-La app aplica medidas tecnicas razonables acordes a la naturaleza del producto y del almacenamiento local que utiliza. No obstante, ninguna transmision o sistema de almacenamiento es completamente infalible.
+- Google Play, for an optional in-app purchase;
+- external apps or external links opened by the user, such as phone or WhatsApp when opened from `Friends List`;
+- other nearby devices that have N3D Launcher open and Nearby enabled, only to exchange the basic avatar profile described above.
 
-## 12. Menores de edad
+Data used for notification badges is not shared with third parties by the app or with a proprietary backend.
 
-La app no esta dirigida especificamente a menores salvo que la ficha publicada y la configuracion final indiquen otra cosa. Si un padre, madre o tutor considera que un menor ha proporcionado datos en contra de lo esperado, puede contactar con el responsable para solicitar revision o eliminacion cuando sea posible.
+## 9. Data Retention
 
-## 13. Enlaces y servicios de terceros
+### 9.1 Local Data
 
-La app puede abrir webs, redes sociales, correos o apps externas. Cuando el usuario usa esos enlaces o servicios, el tratamiento de datos pasa a regirse por las politicas del tercero correspondiente.
+Data stored on the device is normally retained until:
 
-En caso de compra integrada, tambien aplican las condiciones y politicas de Google Play.
+- the user deletes it from within the app;
+- the user clears the app data from Android settings;
+- the user uninstalls the app.
 
-## 14. Cambios en esta politica
+### 9.2 Purchase Data
 
-Esta Politica de Privacidad puede actualizarse para reflejar cambios legales, tecnicos o funcionales. La version vigente sera la publicada en la URL oficial asociada a la app y, cuando proceda, tambien dentro de la propia aplicacion.
+The app may keep minimal local state for user experience, but in the `play` flavor the premium entitlement is synchronized again with Google Play and is not considered valid based only on local storage.
 
-## 15. Contacto
+## 10. Data Deletion
 
-Para dudas sobre privacidad, acceso, rectificacion, eliminacion o uso de datos, puedes contactar en:
+The user can:
 
-- Correo: [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com)
+- uninstall the app;
+- clear the app data from Android settings;
+- delete local content using available features;
+- request additional information by contacting [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com).
+
+## 11. Security
+
+The app applies reasonable technical measures appropriate to the nature of the product and the local storage it uses. However, no transmission or storage system is completely infallible.
+
+## 12. Children
+
+The app is not specifically directed at children unless the published store listing and final configuration state otherwise. If a parent or guardian believes that a child has provided data contrary to expectations, they may contact the controller to request review or deletion where possible.
+
+## 13. Third-Party Links and Services
+
+The app may open websites, social networks, emails, or external apps. When the user uses those links or services, data processing is governed by the corresponding third party's policies.
+
+For in-app purchases, Google Play terms and policies also apply.
+
+## 14. Changes to This Policy
+
+This Privacy Policy may be updated to reflect legal, technical, or functional changes. The current version will be the one published at the official URL associated with the app and, where applicable, also inside the app.
+
+## 15. Contact
+
+For questions about privacy, access, rectification, deletion, or data use, you can contact:
+
+- Email: [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com)
