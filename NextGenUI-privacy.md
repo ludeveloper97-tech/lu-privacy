@@ -1,6 +1,6 @@
 # Privacy Policy for NextGenUI
 
-Effective date: 2026-04-26
+Effective date: 2026-04-28
 
 This Privacy Policy explains how NextGenUI (`com.ludev.nextgenui`) handles data.
 
@@ -15,7 +15,7 @@ NextGenUI is an Android launcher. A launcher needs access to information about i
 
 NextGenUI is designed to work locally on the device. The app does not sell personal information and does not share personal information with third parties.
 
-The app does not currently include advertising SDKs, analytics SDKs, user accounts or a backend service that receives user launcher data.
+The app does not currently include advertising SDKs, analytics SDKs or named user accounts. A Firebase backend is used to verify Premium purchases and, if the optional weather widget is used, to request current weather without exposing the developer's weather API key in the app.
 
 ## 2. Data Accessed or Used by the App
 
@@ -66,7 +66,13 @@ Purpose:
 
 Notification access is optional. The user can enable or disable it in Android system settings.
 
-If the optional lockscreen HUD overlay is enabled, notification access may also be used to show a compact notification feed on that overlay.
+If the optional lockscreen HUD overlay or optional ShortLook notification HUD is enabled, notification access may also be used to show a compact notification feed or a focused hero notification overlay.
+
+The optional lockscreen feed and ShortLook HUD may use notification information such as notification title, text preview, app label, app icon, package name, post time, clearable state and the notification's Android pending action when the user taps a notification item.
+
+If the user dismisses a clearable notification from the lockscreen HUD, NextGenUI asks Android to cancel that notification through the notification listener service.
+
+ShortLook uses recent notification information only to decide whether a focused alert should be displayed. It does not use charger events or generic screen-on events as notification content.
 
 NextGenUI does not use notification access to sell or share notification content.
 
@@ -98,6 +104,25 @@ Examples:
 Purpose:
 
 - Preserve the user’s launcher configuration.
+
+### 2.5.1 Premium Purchase Verification
+
+NextGenUI uses Google Play Billing for the optional Premium unlock. To reduce purchase tampering, the app may send the Android package name, product id and Google Play purchase token to a Firebase backend operated by the developer. The backend verifies the purchase with Google Play and returns a signed entitlement token that is stored locally.
+
+NextGenUI may also use Firebase anonymous authentication and Firebase App Check for this verification flow. The app does not store full payment card information.
+
+### 2.5.2 Optional Weather Widget
+
+If the user adds the optional weather widget and grants location permission, NextGenUI may use approximate device location to request current weather.
+
+Purpose:
+
+- Show current weather in the launcher widget.
+- Avoid storing the weather API key inside the app.
+
+The app sends approximate latitude, approximate longitude, language, Android package name and product id to a Firebase backend operated by the developer. The backend requests current weather from OpenWeather and returns only weather display data such as city, description, temperature, humidity and wind speed.
+
+The weather widget is optional. Location permission is requested only when the user activates the widget action. The app does not request background location for this widget.
 
 ### 2.6 Home Layout
 
@@ -145,23 +170,43 @@ Purpose:
 
 The review prompt and store listing are handled by Google Play. NextGenUI stores only local counters used to avoid requesting reviews too frequently.
 
-### 2.9 Optional Lockscreen HUD Overlay
+### 2.9 In-App Purchase
 
-NextGenUI can show an optional HUD overlay while the device is locked.
+NextGenUI may offer a one-time premium unlock through Google Play Billing.
+
+Purpose:
+
+- Unlock premium launcher features selected by the user.
+- Restore premium access on eligible devices/accounts.
+
+Purchase processing is handled by Google Play. NextGenUI stores a local premium entitlement flag after a successful purchase or restore so the app can enable premium features.
+
+NextGenUI does not process payment card details directly.
+
+### 2.10 Optional Lockscreen HUD Overlay And ShortLook HUD
+
+NextGenUI can show an optional HUD overlay while the device is locked. It can also show an optional ShortLook-style notification HUD for focused notification alerts.
 
 Purpose:
 
 - Display time and date in the NextGenUI HUD style.
 - Display a compact notification feed if notification access is granted.
+- Display a focused ShortLook hero notification if notification access is granted and the feature is enabled.
 - Let the user tap the overlay to continue into Android's normal authentication flow.
+- Let the user tap a notification feed item to open the related app or Android notification action when available.
+- Let the user tap a ShortLook notification card to open the related app or Android notification action when available.
+- Let the user dismiss clearable notifications from the overlay.
+- Avoid repeatedly displaying the same ShortLook alert for the same notification.
 
-The overlay does not replace Android's real lockscreen security and does not bypass PIN, pattern, password or biometric authentication.
+The overlay and ShortLook HUD do not replace Android's real lockscreen security and do not bypass PIN, pattern, password or biometric authentication.
+
+These surfaces are optional companion views. Android still controls real device authentication and final access to protected content.
 
 ## 3. Data Collection
 
 NextGenUI stores launcher settings and layout locally on the device.
 
-The current app does not collect user data on a developer-operated server.
+The current app uses a developer-operated Firebase backend for Premium purchase verification and optional current weather requests.
 
 The current app does not transmit the user’s installed app list, launcher layout, notification data, backups or settings to the developer.
 
@@ -187,7 +232,7 @@ Those flows are provided by the operating system or Google Play services.
 Sensitive features are optional and user-controlled:
 
 - Notification badges require explicit notification access.
-- The lockscreen HUD notification feed requires explicit notification access.
+- The lockscreen HUD notification feed, ShortLook hero alerts, notification tap actions and notification dismissal require explicit notification access.
 - Double tap screen-off requires explicit Device Admin activation.
 - Backup import/export requires user action.
 - Default launcher selection is controlled by Android settings.
