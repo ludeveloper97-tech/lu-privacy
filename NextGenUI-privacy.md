@@ -289,19 +289,3 @@ For privacy questions, contact:
 
 `ludeveloper97@gmail.com`
 
-## 13. Publication Notes for Google Play
-
-Before submitting to Google Play:
-
-- Host this policy as a public web page.
-- Do not use a PDF as the primary privacy policy URL.
-- Make sure the URL is accessible without login.
-- Make sure the URL is not geofenced.
-- Make sure the URL is not editable by public users.
-- Make sure the policy contact email is real.
-- Make sure Google Play Data safety answers match the production app behavior.
-
-Official references:
-
-- [Google Play User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311)
-- [Google Play Data safety section guidance](https://support.google.com/googleplay/android-developer/answer/10787469)
