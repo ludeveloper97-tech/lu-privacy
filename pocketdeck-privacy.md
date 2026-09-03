@@ -1,4 +1,4 @@
-# Privacy Policy - English Publication Copy
+# Privacy Policy - English Publication
 
 Last updated: September 4, 2026
 
