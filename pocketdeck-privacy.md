@@ -1,30 +1,81 @@
-# Privacy Policy 
-## App
+# Privacy Policy - English Publication Copy
 
-PocketDeck  
-Package: `com.ludev.pocketdeck`  
-Developer / publisher: LuDev
+Last updated: September 4, 2026
 
-## Data and Device Features Used
+Developer/publisher: LuDev
 
-PocketDeck may access installed launchable apps, local photos and videos, local audio files, camera access, internet access, game folder metadata, and local preferences. These are used to provide visible launcher features such as app launching, media browsing, music playback, custom backgrounds, game library scanning, and launcher configuration.
+Contact: ludeveloper97@gmail.com
 
-## Local-First Handling
+Apps: `com.ludev.pocketdeck` and `com.ludev.pocketdeck.stripe`
 
-Launcher layouts, pages, folders, themes, selected backgrounds, audio settings, game folders, and cached previews are stored locally on the device. PocketDeck does not sell user data and does not use the Android Advertising ID.
+## Overview
 
-## Sharing
+PocketDeck is an independent Android launcher with retro handheld-inspired
+interfaces. Most launcher data is processed and stored only on the device.
 
-PocketDeck may pass limited data to external apps only when the user requests it, such as opening a browser link, launching an installed app, opening a camera action, or launching a game through an installed emulator.
+## Data processed locally
 
-## Permissions
+The app may access installed launchable apps, photos, videos, music and related
+metadata, the camera, game folders and metadata, backgrounds, layouts, pages,
+and preferences. This data is used to show and open content selected by the
+user and is not uploaded to the Premium backend.
 
-The app may request photos/videos, audio/media, camera, internet, and vibration permissions. It does not request SMS, contacts, call logs, location, microphone, accessibility, overlay, all-files access, install-package access, or unrestricted package visibility.
+PocketDeck does not sell data, use the Advertising ID, or use data for ads or
+marketing.
 
-## User Control
+## Optional Premium service
 
-Users can revoke permissions, clear app data, remove selected folders, or uninstall the app at any time through Android system settings.
+The free launcher works without activating Firebase. Remote services are
+activated only when a user opens a Premium feature, buys or restores Premium,
+or when a previously stored Premium license must be validated.
 
-## Contact
+In those cases, the following data may be collected:
 
-Contact email and public policy URL must be added before Play Store publication.
+- A Firebase Installation ID and technical installation identifiers/tokens.
+- An anonymous Firebase Authentication user ID.
+- Purchase or license product, token, and status.
+- IP address, user agent, basic device/app information, invoked function name,
+  and a technical FCM token.
+- An App Check/Play Integrity token in the Play version.
+
+This data is used to verify purchases, restore licenses, detect fraud or
+tampering, check refunds/revocations, and protect the backend. Data is encrypted
+in transit.
+
+Google Firebase provides authentication, verification, and backend services.
+Google Play directly processes Play-flavor payments. Stripe processes a payment
+in the Stripe flavor when the user requests it. PocketDeck does not receive or
+store full payment card numbers.
+
+## Sharing and external services
+
+These providers process data to deliver the requested services. PocketDeck
+does not share data for advertising. An external browser, camera, store, app,
+or emulator opened by the user is governed by that provider's privacy policy.
+
+## Retention and deletion
+
+Local preferences and previews remain until the user removes them, clears app
+data, or uninstalls PocketDeck. License records are kept as needed to maintain,
+restore, and protect Premium, comply with legal duties, or resolve fraud.
+
+Users may request deletion of their anonymous identifier and associated data
+through the published contact email. Some transaction records may be retained
+where legally required.
+
+## User choices
+
+Users can use the launcher without Premium, avoid its purchase features,
+revoke Android permissions, remove selected folders, clear local app data, or
+uninstall the app.
+
+## Children
+
+PocketDeck is not designed to knowingly collect children's personal data.
+Questions can be sent to the developer contact.
+
+## Changes and contact
+
+This policy will be updated when the app, SDKs, or services change. Replace the
+contact placeholder with a real email and publish this copy at a public HTTPS
+URL before release.
