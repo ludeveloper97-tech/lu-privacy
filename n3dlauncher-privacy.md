@@ -1,270 +1,77 @@
-# Privacy Policy
+# N3D Launcher Privacy Policy
 
-Last updated: May 29, 2026
+Last updated: October 6, 2026.
 
-## 1. Data controller
+[Versión en español](politica_de_privacidad.md)
 
-This Privacy Policy describes how information is accessed, used, stored, and shared in connection with the `N3D Launcher` app (Android package `com.ludev.threedlauncherm`) in its Google Play version.
+## 1. About this policy
 
-Data controller:
+This policy applies to N3D Launcher for Google Play, including Community Shop, NearbyVerse and the app's other features. For privacy questions or requests concerning your data, contact the developer at [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com).
 
-- Email: [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com)
+Most launcher features work with information stored on your device. Some require Internet services or sharing information with other users. We do not sell your personal data or use your steps, contacts or notifications for advertising.
 
-If you publish the app under another entity or email address, replace these details before submitting the app to Google Play.
+## 2. Data the app uses
 
-## 2. Scope
+Depending on the features you choose, the app may use:
 
-This policy covers:
+- **Apps and customization:** installed app names and icons, preferences, folders, notes and local usage history to organize your HOME.
+- **Files:** images, music, animations, fonts and games you select. Device fonts and imported fonts are stored and used locally. The library processes games on your device; it does not upload them to our server. Opening content in another app gives that app the access it needs.
+- **Contacts:** with your permission, names, phone numbers and photos to display, search or create contacts. We do not upload your address book. When you choose a call or WhatsApp, the selected number is passed to that app.
+- **Camera and notifications:** with your authorization, images for capture and effects, or notification counts for app icons. Camera images are processed locally, and notification counters do not send your message text. We do not request microphone access.
+- **Access protection:** Android verifies your identity to unlock protected apps or folders. We do not receive your fingerprint or other system biometric data.
 
-- data the app accesses on the device;
-- data the app stores locally;
-- data the app may transmit outside the device;
-- permissions requested by the current Google Play version;
-- data retention and deletion.
+Music included in the launcher’s built-in apps plays on your device. You can mute it per app as well as use the global control. These settings are stored locally; this feature does not record audio or send a listening history.
 
-## 3. Privacy Summary
+Importing a file to customize the launcher does not publish it to the community.
 
-The current Google Play version mainly works as an Android launcher and personalization experience. Most information used by the app is processed locally on the user's device.
+## 3. Steps and coins
 
-The reviewed `play` build:
+If you enable “Earn coins by walking,” the app requests physical activity permission and uses your steps to award coins for unlocking community content. Recording can continue in the background and while the screen is off. It does not use your location to count steps.
 
-- includes notification badges as an optional feature, disabled by default, which requires the user to first enable the setting inside the app and then grant Android's special notification access;
-- does not use pedometer data or internal coins;
-- may use Nearby/Bluetooth for nearby avatar profile exchange if the user enables Nearby;
-- does not use a `ForegroundService`, persistent notification, or local/mDNS fallback in the `play` version;
-- does not use Firebase or a proprietary backend;
-- does not use broad storage access;
-- offers an optional one-time purchase managed by Google Play to unlock advanced personalization;
-- may access contacts if the user grants permission when opening `Friends List`;
-- may manage a local library of compatible files chosen by the user through the system file picker.
+**Your steps, coins and unlocks are stored on your device and are not sent to our server.** Coins have no monetary value and cannot be bought with money. You can use the app without enabling step counting and collect the daily coin available in the store.
 
-The app is not designed to sell personal data or use personal data for advertising purposes.
+You can disable the counter under **Settings → Connection and sensors → Steps and coins**, or **Community Shop → My coins**. Disabling it does not erase your balance. The wallet is excluded from backups: clearing app data or uninstalling deletes your coins and unlocks, and the store's recovery key does not restore them.
 
-## 4. Data Accessed or Processed Locally
+## 4. Features that share information
 
-### 4.1 Installed Apps and Basic Metadata
+**Community Shop.** To manage publications and activity, the store uses an identifier for your installation without asking for your real name, email or password. When you publish animations, icons or sounds, individually or in packs, other users can view and download the file and see your alias and Mii portrait (if created), title, description, category and coin price. Ratings and download counts are also displayed.
 
-The app may read information about launchable installed apps in order to:
+The server stores your publications, ratings, downloads, reports and blocks. It receives your searches and connection data, such as your IP address, to provide the service and prevent abuse. Reports and blocks are not published. The association between content and the app you apply it to stays on your device. Keep your recovery key private.
 
-- display them in the launcher;
-- allow search and launch;
-- organize them into folders;
-- set default shortcuts in launcher modules.
+**NearbyVerse.** If you participate, your nickname, biography, Mii portrait, posts, drawings or images, comments and reactions are public. We also store follows, favorites, notices, reports and blocks to provide the community; reports, blocks and your age range are private. We do not ask for a birth date, email or real name. It uses the same identity and recovery key as Community Shop. The server also receives your searches and connection data to provide the service and prevent abuse.
 
-Data processed locally may include:
+Publishing is for ages 13 and up. For ages 13–17, a parent or guardian must approve the profile and each publication with a PIN stored on the device. The server receives the approval, never the PIN. These profiles can share text and drawings; there are no private messages. Other people can save what you publish.
 
-- app name;
-- Android package name;
-- icon;
-- version;
-- installation date.
+**nearbyPass.** If enabled, it shares your profile with nearby devices: identifier, name, avatar, phrase, stated nationality, last visible app or module, and update date. Received profiles remain in each user's plaza. You can stop exchanges from the app or its notification; this does not delete copies already received. Depending on Android, nearby device or location permissions are needed to find devices, but we do not create GPS route histories.
 
-### 4.2 Camera and Visual Content
+**Avatars and cover images.** The editor sends your avatar information to an external service to generate its images and models. If you enable cover or background searches, game titles and platforms are sent to image providers, not the game files. These services also receive connection information.
 
-If the user grants camera permission, the app may:
+**Purchases and support.** Google Play handles payments. We use purchase information and a user identifier to verify and restore your unlock; we do not receive your full card number. If you contact us, we use your email address and message to respond.
 
-- use the camera inside the corresponding module;
-- capture images inside the app;
-- allow the user to use selected images for personalization features.
+## 5. Providers and security
 
-In the reviewed Google Play version, video recording with audio is disabled and the app does not request microphone permission.
+We use IONOS to host Community Shop and NearbyVerse, and Google services, including Firebase, for purchases, security and other features. The avatar editor uses `mii-unsecure.ariankordi.net` and resources from jsDelivr; cover images use TheGamesDB and Libretro.
 
-### 4.3 Contacts
+Some Google services collect technical device information, identifiers and operational data for security, diagnostics and improvement. This is separate from content processed locally. Providers may process information in different countries under their applicable terms and safeguards.
 
-If the user grants contacts permission when opening `Friends List`, the app may locally read contacts from the device in order to:
+Connections to Community Shop, NearbyVerse and our purchase verification service are encrypted during transmission. Access to files and device features depends on your selections and permissions. Content you publish is public, and external services have their own privacy practices.
 
-- display the friends list inside the launcher;
-- search contacts by name;
-- display name, phone number, and local thumbnail when provided by the system;
-- start a phone call or open WhatsApp with the number chosen by the user;
-- allow creating a contact from the friends screen.
+## 6. Retention and deletion
 
-Contacts are processed locally on the device. The current build does not use Firebase or a proprietary backend to upload contacts to a server.
+Local data remains until you delete it through the available options, clear app data or uninstall. Exported files must be deleted from wherever you saved them. Android may back up other settings depending on your configuration, but not the wallet. Daily step records older than 32 days are deleted when the wallet is updated; revoking permission does not erase existing records.
 
-The app shows an explanation before requesting contacts permission:
+Publications and records associated with your store identity currently have no general automatic expiration. **Deleting a publication removes it from the catalog, but does not automatically delete all associated records or copies downloaded by other users.** Its files and thumbnails are deleted when no other active publication uses them; resources linked from other packs remain while they are still in use. Contact us to request deletion of those records. Uninstalling also does not delete server data or Google Play purchases.
 
-```text
-N3D Launcher uses your contacts only to show the friends list and allow calls or opening WhatsApp from this screen. Contacts are not uploaded to any server.
-```
+You can delete your NearbyVerse profile and activity from its menu or through [the deletion page](https://www.mrrubik.com/3dscommunity/delete.php). This deletes the profile, posts and files, comments, reactions, follows and associated records, including replies to your posts. It does not delete Community Shop or copies saved by other people. Protected technical backups are renewed during maintenance and removed following a profile deletion request.
 
-### 4.4 Files Selected by the User
+Purchase records, security logs and provider backups are retained according to their purpose, configuration and applicable obligations. Temporary anti-abuse controls expire within a maximum of 24 hours and are cleared when new checks run; hosting logs and backups are managed separately.
 
-The app may access files voluntarily chosen by the user through the system file picker in order to:
+## 7. Your choices and rights
 
-- import images or animations;
-- configure custom backgrounds;
-- import compatible files for the local library.
+You can revoke permissions through Android and disable optional features. We process information to provide the services you request, with your consent where appropriate, and to prevent abuse or meet legal obligations.
 
-The app does not request `MANAGE_EXTERNAL_STORAGE` or broad storage access.
+To request access, correction, deletion or exercise other applicable rights, email [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com), mentioning N3D Launcher and the affected service. We may ask for proportionate information to locate your data and verify ownership. Do not send passwords or private keys in your initial message. If we must retain any data for legal or security reasons, we will explain why.
 
-### 4.5 Local Library of Compatible Files
+Where applicable, you can also withdraw consent, object to processing, request restriction or portability of your data, and complain to your data protection authority.
 
-The app may allow the user to select compatible files, such as `.3ds`, `.cia`, `.3dz`, `.nds`, `.dsi`, `.gba`, `.gbc`, or `.gb`, to display them in a local library inside the launcher.
-
-When the user imports one of these files, the app may locally process:
-
-- file name;
-- file path selected by the user;
-- internal content identifier when available;
-- embedded thumbnail when exposed by the file format;
-- approximate platform based on file extension;
-- preferred emulator chosen by the user.
-
-The extracted thumbnail is stored locally in the app's internal storage so it can be displayed again inside the library. If no valid thumbnail is available, the app displays a local generic placeholder.
-
-### 4.6 Preferences, Backgrounds, and Local Content
-
-The app may locally store information such as:
-
-- themes and gradients;
-- custom backgrounds;
-- folders and grid configuration;
-- drawn notes;
-- usage logs inside the app;
-- local protection state for selected access points.
-
-### 4.7 Local Device Authentication
-
-The app may use device authentication, such as biometrics or secure lock screen authentication, to protect access to selected apps or folders inside the launcher.
-
-The app does not receive or store the user's biometric fingerprint. It only receives the authentication result from Android.
-
-### 4.8 Google Play In-App Purchases
-
-The `play` version may offer an optional one-time purchase to unlock premium personalization features, icon packs, and advanced local library features.
-
-When the user starts a purchase, the transaction is handled by Google Play Billing. The app may receive and locally process technical information needed to unlock the content, such as:
-
-- purchased product identifier;
-- purchase or restoration status;
-- transaction identifier when provided by Google Play.
-
-The app does not directly process payment card data or payment credentials on its own servers.
-
-### 4.9 Nearby / Nearby Profile Exchange
-
-If the user enables Nearby, the `play` version may use Google Nearby Connections to detect other nearby devices that also have N3D Launcher open and Nearby enabled.
-
-The app may exchange a basic avatar profile that may include:
-
-- local technical device identifier;
-- username/avatar name;
-- short phrase;
-- selected nationality;
-- last visible module/app when applicable;
-- limited-size icon/avatar when available.
-
-Received profiles are stored locally in the app's plaza. The `play` version does not use a proprietary server for this feature, does not use Firebase, and does not keep Nearby active through a `ForegroundService`. The feature may stop searching if the app goes to the background or the device is locked.
-
-### 4.10 Notification Badges
-
-The app may offer an optional feature to show notification counters on launcher icons.
-
-This feature:
-
-- is disabled by default;
-- requires the user to manually enable it from the launcher settings;
-- requires the user to grant Android's special notification access from system settings;
-- may locally read which apps have active notifications in order to calculate a counter per app;
-- does not need to read or display message content to work;
-- is used only to update visual badges inside the launcher.
-
-Counters are processed locally on the device. The app does not send notifications, message texts, senders, or badge counters to a proprietary server, and does not use them for advertising, analytics, automation, or remote control.
-
-The user can disable this feature from the launcher settings and can also revoke notification access from Android settings at any time.
-
-## 5. Data That May Be Transmitted Outside the Device
-
-According to the current review of the `play` flavor, the app does not use Firebase and is not designed to transmit personal data to a proprietary backend as part of its main flow.
-
-However:
-
-- the app may open websites, email, or other external apps when the user chooses to do so;
-- the optional premium purchase is handled by Google Play;
-- if the user enables Nearby, a basic avatar profile may be exchanged directly with other nearby devices through Google Nearby Connections;
-- if the user enables notification badges, notification data is processed locally and is not transmitted to a proprietary server;
-- if remote features are re-enabled in a future version, this policy must be updated before publishing that build.
-
-## 6. Purposes of Processing
-
-The app processes data to:
-
-- provide a functional home screen/launcher;
-- display, organize, and launch installed apps;
-- allow visual personalization of the launcher;
-- show the friends list from local contacts if the user grants permission;
-- manage a local library of compatible files selected by the user;
-- protect local access points through device authentication;
-- save preferences and user-created content;
-- allow optional nearby avatar profile exchange when the user enables Nearby;
-- show optional notification badges on launcher icons when the user enables the feature and grants Android's special notification access;
-- check the status of an optional premium purchase made through Google Play.
-
-## 7. Legal Basis
-
-Depending on the feature used, processing may be based on:
-
-- performance of the functionality requested by the user;
-- the user's consent when enabling optional permissions or features;
-- performance of an optional purchase requested by the user through Google Play;
-- the controller's legitimate interest in operating and maintaining the app within applicable legal limits;
-- compliance with legal obligations, where applicable.
-
-## 8. Data Sharing
-
-According to the current review of the `play` build, the app is not designed to share personal data with third parties through a proprietary backend.
-
-The app may interact with third parties only when requested by the user, for example:
-
-- Google Play, for an optional in-app purchase;
-- external apps or external links opened by the user, such as phone or WhatsApp when opened from `Friends List`;
-- other nearby devices that have N3D Launcher open and Nearby enabled, only to exchange the basic avatar profile described above.
-
-Data used for notification badges is not shared with third parties by the app or with a proprietary backend.
-
-## 9. Data Retention
-
-### 9.1 Local Data
-
-Data stored on the device is normally retained until:
-
-- the user deletes it from within the app;
-- the user clears the app data from Android settings;
-- the user uninstalls the app.
-
-### 9.2 Purchase Data
-
-The app may keep minimal local state for user experience, but in the `play` flavor the premium entitlement is synchronized again with Google Play and is not considered valid based only on local storage.
-
-## 10. Data Deletion
-
-The user can:
-
-- uninstall the app;
-- clear the app data from Android settings;
-- delete local content using available features;
-- request additional information by contacting [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com).
-
-## 11. Security
-
-The app applies reasonable technical measures appropriate to the nature of the product and the local storage it uses. However, no transmission or storage system is completely infallible.
-
-## 12. Children
-
-The app is not specifically directed at children unless the published store listing and final configuration state otherwise. If a parent or guardian believes that a child has provided data contrary to expectations, they may contact the controller to request review or deletion where possible.
-
-## 13. Third-Party Links and Services
-
-The app may open websites, social networks, emails, or external apps. When the user uses those links or services, data processing is governed by the corresponding third party's policies.
-
-For in-app purchases, Google Play terms and policies also apply.
-
-## 14. Changes to This Policy
-
-This Privacy Policy may be updated to reflect legal, technical, or functional changes. The current version will be the one published at the official URL associated with the app and, where applicable, also inside the app.
-
-## 15. Contact
-
-For questions about privacy, access, rectification, deletion, or data use, you can contact:
-
-- Email: [ludeveloper97@gmail.com](mailto:ludeveloper97@gmail.com)
+Do not publish other people's private information. If you find a minor's data or content that should be removed, report it in Community Shop or NearbyVerse, as appropriate, or contact us. Any changes to this policy will be published with an updated date.
