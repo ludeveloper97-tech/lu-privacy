@@ -1,12 +1,14 @@
 # PadBoard Privacy Policy — Google Play Version
 
-Last updated: September 30, 2026
+Last updated: October 29, 2026
+
+
 
 ## 1. Scope and contact
 
 This Privacy Policy explains how PadBoard processes information when you use the Android app distributed through Google Play, with package name `com.ludev.padborad`.
 
-The developer responsible for PadBoard is **Ludev** (“we,” “us,” or “our”). For privacy questions or requests concerning your personal information, contact **ludeveloper97@gmail.com**.
+The developer responsible for PadBoard is **ludev** (“we,” “us,” or “our”). For privacy questions or requests concerning your personal information, contact **ludeveloper97@gmail.com**.
 
 This policy applies only to the Google Play version of PadBoard.
 
@@ -76,7 +78,9 @@ The keyboard itself does not contact the purchase backend while you type. Purcha
 
 We use Google Play for billing and optional reviews, and Google Firebase services for authentication, purchase verification, and purchase-record storage.
 
-These services may process technical information needed to operate and secure requests. Firebase identifies IP addresses and user-agent information among the data processed for authentication and service operation. This information is separate from keyboard content. See [Firebase's privacy information](https://firebase.google.com/support/privacy).
+When purchase services are used, Firebase processes identifiers as well as purchase records. These include the anonymous Firebase Authentication user ID and identifiers associated with the app installation, such as the Firebase installation ID (FID). The Cloud Functions SDK also collects a Firebase Cloud Messaging (FCM) token when invoking functions, independently of whether the app offers push notifications. These identifiers support installation identification, authenticated backend requests, and purchase verification. They are separate from keyboard content and are not used by PadBoard for advertising. See [Firebase's Android data disclosure guidance](https://firebase.google.com/docs/android/play-data-disclosure).
+
+Firebase also processes IP addresses and user-agent information to operate its services and protect authentication from abuse. These technical identifiers and metadata are transmitted off the device; local keyboard processing does not mean the entire app collects no data. See [Firebase's privacy information](https://firebase.google.com/support/privacy).
 
 The purchase functions are configured in Google's `europe-west1` region. This does not mean all Google processing, authentication, support, or backups occur exclusively in that region. Google may process information internationally as described in its applicable terms and [Google Privacy Policy](https://policies.google.com/privacy).
 
